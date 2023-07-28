@@ -3,7 +3,7 @@ import db from '../database/connection';
 
 export default class ServiceTypesController {
 	async index(request: Request, response: Response): Promise<Response> {
-    response.setHeader('Content-Type', 'application/json');
+		response.setHeader('Content-Type', 'application/json');
 		try {
 			const serviceTypes = await db('service_types').select();
 			return serviceTypes.length
