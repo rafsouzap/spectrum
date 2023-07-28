@@ -2,15 +2,22 @@
   "version": 2,
   "builds": [
       {
-          "src": "dist/server.js",
-          "use": "@vercel/node",
-          "config": { "includeFiles": ["dist/**"] }
+          "src": "src/server.ts",
+          "use": "@vercel/node"
       }
   ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "dist/server.js"
-      }
+    {
+      "src": "/robots.txt",
+      "status": 204
+    },
+    {
+      "src": "/favicon.ico",
+      "status": 204
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/server.ts"
+    }
   ]
 }

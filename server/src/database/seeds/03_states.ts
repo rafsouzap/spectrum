@@ -12,7 +12,7 @@ export async function seed(knex: Knex): Promise<void> {
 		{ name: 'Amazonas', state: 'AM' },
 		{ name: 'Bahia', state: 'BA' },
 		{ name: 'Ceará', state: 'CE' },
-    { name: 'Distrito Federal', state: 'DF' },
+		{ name: 'Distrito Federal', state: 'DF' },
 		{ name: 'Espírito Santo', state: 'ES' },
 		{ name: 'Goiás', state: 'GO' },
 		{ name: 'Maranhão', state: 'MA' },
