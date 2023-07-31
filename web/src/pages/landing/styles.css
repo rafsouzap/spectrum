@@ -1,0 +1,108 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-title-in-primary);
+  background: var(--color-background);
+}
+
+#page-landing-left-content {
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: var(--color-title-in-primary);
+  background: var(--color-primary);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#page-landing-right-content {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background: var(--color-secondary);
+}
+
+#page-landing-left-content .content {
+  flex-wrap: wrap;
+  gap: 50px 22px;
+  max-width: 564px;
+  right: 90px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+#page-landing-right-content .content {
+  flex-wrap: wrap;
+  gap: 50px 22px;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content h2 {
+  text-align: initial;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container a {
+  height: 80px;
+  border-radius: 10px;
+  font: 500 17px Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+}
+
+.buttons-container a:first-child {
+  margin-right: 22px;
+}
+
+.buttons-container a img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.buttons-container a.find-specialties {
+  width: 264px;
+  background: var(--color-button-primary);
+}
+
+.buttons-container a.offer-services {
+  width: 278px;
+  background: var(--color-button-secondary);
+}
+
+.buttons-container a.find-specialties:hover {
+  background: var(--color-button-primary-light);
+}
+
+.buttons-container a.offer-services:hover {
+  background: var(--color-button-secondary-light);
+}
