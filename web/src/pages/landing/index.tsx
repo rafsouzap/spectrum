@@ -24,7 +24,7 @@ function Landing(): ReactElement {
 						coração, fazendo a diferença em cada passo do caminho.
 					</p>
 					<div className="buttons-container">
-						<Link to="/find-specialties" className="find-specialties">
+						<Link to="/search-specialists" className="search-specialists">
 							<img src={peopleIcon} alt="Buscar especialistas" />
 							Buscar Especialistas
 						</Link>

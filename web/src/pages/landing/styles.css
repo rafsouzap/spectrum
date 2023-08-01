@@ -89,7 +89,7 @@
   margin-right: 8px;
 }
 
-.buttons-container a.find-specialties {
+.buttons-container a.search-specialists {
   width: 264px;
   background: var(--color-button-primary);
 }
@@ -99,7 +99,7 @@
   background: var(--color-button-secondary);
 }
 
-.buttons-container a.find-specialties:hover {
+.buttons-container a.search-specialists:hover {
   background: var(--color-button-primary-light);
 }
 
